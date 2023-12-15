@@ -9,7 +9,7 @@ const Test:React.FC = () => {
     <>
    
        
-<div className='img-parent'><img id="background-img" src="https://storage.123fakturere.no/public/wallpapers/geiranger.jpg" alt="Image" /></div>
+<img id="background-img" src="https://storage.123fakturere.no/public/wallpapers/geiranger.jpg" alt="Image" />
    <nav className='nav'>
         
     <div className='nav-left'>
