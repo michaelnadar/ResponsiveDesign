@@ -1,0 +1,55 @@
+
+
+.price-input-parent{
+    display: flex;
+    flex-direction: column;
+   
+}
+.price-container{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 70px;
+}
+
+.price-button-parent{
+    display: flex;
+    gap:15px;
+}
+.input-price{
+    position: relative;
+}
+.input-price > input{
+    margin-bottom: 7px;
+    width: 300px;
+    padding: 10px;
+    border-radius: 15px;
+    border:1px solid rgb(232,232,232)
+}
+
+.input-price>img{
+    position: absolute;
+    top:15%;
+    right:8px;
+}
+.price-button{
+    height: 30px;
+    width: auto;
+    position: relative;
+    border:1px solid rgb(232,232,232);
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0 0 10px #e8e8e8;
+    padding:10px  15px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    place-content: space-between;
+    gap:5px;
+}
+.price-button>button{
+    border: none;
+    cursor: pointer;
+
+    background-color: white;
+    color :gray;
+}

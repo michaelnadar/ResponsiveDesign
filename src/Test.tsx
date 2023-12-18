@@ -6,14 +6,12 @@ import './Test.css'
 const Test:React.FC = () => {
   
   return (
-    <>
-   
-       
+    <> 
 <img id="background-img" src="https://storage.123fakturere.no/public/wallpapers/geiranger.jpg" alt="Image" />
    <nav className='nav'>
         
     <div className='nav-left'>
-    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" className="hamburger-icon" height="35px" width="35px" xmlns="http://www.w3.org/2000/svg"><path d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z"></path></svg>
+    <svg stroke="currentColor" fill="currentColor" strokeWidth="0" viewBox="0 0 24 24" className="hamburger-icon" height="32px" width="32px" xmlns="http://www.w3.org/2000/svg"><path d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z"></path></svg>
         <img  src="https://storage.123fakturere.no/public/icons/diamond.png" alt="Diamond" height={30}/>
     </div>
     <div className='nav-right'>
