@@ -1,12 +1,11 @@
 import './priceSlider.css'
 import {
-    IconFileFilled,
+    
     IconUser,
     IconSettings,
     IconBook,
     IconTag,
     IconFileDescription,
-    IconX,
     IconReceiptTax,
     IconClipboardList,
     IconCloudUpload,
