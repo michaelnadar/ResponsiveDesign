@@ -1,16 +1,4 @@
 import './priceSlider.css'
-// import Invoices from '../../../public/invoice.png'
-import Customers from '../../../public/customers.png'
-// import MyBusiness from '../../../public/mybusiness.png'
-// import InvoiceJournel from '../../../public/invoicejournel.png'
-// import PriceList from '../../../public/pricelist.png'
-// import MultipleInvoicing from '../../../public/multipleinvoice.png'
-// import UnpaidInvoices from '../../../public/unpaidinvoices.png'
-// import Offer from '../../../public/offer.png'
-// import InventoryControl from '../../../public/inventorycontrol.png'
-// import MemberInvoicing from '../../../public/memberinvoice.png'
-// import ImportExport from '../../../public/importexport.png'
-// import Logout from '../../../public/logout.png'
 import { PricePage } from '../../Price'
 
 

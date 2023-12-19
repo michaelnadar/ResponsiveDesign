@@ -1,8 +1,5 @@
 import './inputprice.css'
 import search from '../../../public/search.png';
-import add  from "../../../public/add.png";
-import printer from '../../../public/printer.png';
-import mode from '../../../public/advanced_mode.png';
 import { PricePage } from '../../Price';
 
 
