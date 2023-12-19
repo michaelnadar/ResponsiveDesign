@@ -33,7 +33,7 @@
     padding: 0px 4px;
     padding-bottom: 25px;
     display: flex;
-    text-align: center;
+    text-align: left;
     border-radius: 10px;
     border:2px solid rgb(210,217,237);
     overflow: hidden;
@@ -152,7 +152,7 @@
   }
   body .parent-displayprice{
     grid-template-columns: repeat(2, auto) ;
-    font-size: 13px;
+    font-size: 14px;
 }
 body .display-bottom{
     line-height: 1.9;

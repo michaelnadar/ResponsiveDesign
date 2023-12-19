@@ -1,78 +1,45 @@
 import './priceSlider.css'
-import {
-    
-    IconUser,
-    IconSettings,
-    IconBook,
-    IconTag,
-    IconFileDescription,
-    IconReceiptTax,
-    IconClipboardList,
-    IconCloudUpload,
-    IconLogout,
-    IconCreditCard,
-    IconCircleX,
-  } from "@tabler/icons-react";
-const PriceSlider:React.FC = () => {
+// import Invoices from '../../../public/invoice.png'
+import Customers from '../../../public/customers.png'
+// import MyBusiness from '../../../public/mybusiness.png'
+// import InvoiceJournel from '../../../public/invoicejournel.png'
+// import PriceList from '../../../public/pricelist.png'
+// import MultipleInvoicing from '../../../public/multipleinvoice.png'
+// import UnpaidInvoices from '../../../public/unpaidinvoices.png'
+// import Offer from '../../../public/offer.png'
+// import InventoryControl from '../../../public/inventorycontrol.png'
+// import MemberInvoicing from '../../../public/memberinvoice.png'
+// import ImportExport from '../../../public/importexport.png'
+// import Logout from '../../../public/logout.png'
+import { PricePage } from '../../Price'
+
+
+interface PriceData {
+    pricePage?: PricePage; 
+  }
+
+const PriceSlider:React.FC<PriceData> = ({pricePage}) => {
   return  (
     <>
     <section className='slider'>
         <div className='slider-text-main'>
             <div className='slider-title'>
-
-          Menu
+          {pricePage?.sidebar_title}
             </div>
             
             <div className='slider-content'>
-                <div className='slider-text'>
-                <IconFileDescription color="#54cfff" />
-                    <p>Invoices</p>
-                </div>
-                <div className='slider-text'>
-                <IconUser color="#28ffc1" />
-                    <p>Customers</p>
-                </div>
-                <div className='slider-text'>
-                <IconSettings color="#54cfff" />
-                    <p>My Business</p>
-                </div>
-                <div className='slider-text'>
-                <IconBook color="#5ae2ff" />
-                    <p>Invoice Journel</p>
-                </div>
-                <div className='slider-text'>
-                    <div className='slider-active'></div>
-                <IconTag color="#ffb257" />
-                    <p>Price List</p>
-                </div>
-                <div className='slider-text'>
-                <IconFileDescription color="#54cfff" />
-                    <p>Multiple Invoicing</p>
-                </div>
-                <div className='slider-text'>
-                <IconCircleX color="#ff4b97" />
-                    <p>Unpaid Invoices</p>
-                </div>
-                <div className='slider-text'>
-                <IconReceiptTax color="#f7c90b" />
-                    <p>Offer</p>
-                </div>
-                <div className='slider-text'>
-                <IconClipboardList color="#16ceff" />
-                    <p>Inventory Control</p>
-                </div>
-                <div className='slider-text'>
-                <IconCreditCard color="#1b9aff" />
-                    <p>Member Invoicing</p>
-                </div>
-                <div className='slider-text'>
-                <IconCloudUpload color="#82b1ff" />
-                    <p>Import/Export</p>
-                </div>
-                <div className='slider-text'>
-                    <IconLogout/>
-                    <p>Log out</p>
-                </div>
+        {pricePage?.sidebar_content_main.map((item,index)=>
+             
+              (
+                  <div className='slider-text' key={index}>
+                  <img src={item.img} alt="" />
+                      <p>{item.text}</p>
+                  </div>
+              )
+        )
+          }
+                  
+             
             </div>
         </div>
         </section>

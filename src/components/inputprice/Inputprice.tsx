@@ -3,36 +3,37 @@ import search from '../../../public/search.png';
 import add  from "../../../public/add.png";
 import printer from '../../../public/printer.png';
 import mode from '../../../public/advanced_mode.png';
-const Inputprice = () => {
-    const handleClick =()=>{
-        alert('asd');
-    }
+import { PricePage } from '../../Price';
+
+
+interface PriceData {
+    pricePage?: PricePage; 
+  }
+
+
+const Inputprice :React.FC<PriceData>= ({pricePage}) => {
+   
   return (
    <>
    <div className='price-container'>
    <div className='price-input-parent'>
-    <div className='input-price'>
+    {pricePage?.input.map((item,index)=>(
+
+    <div className='input-price' key={index}>
         <img src={search} alt="search"  height={21} width={21}/>
-   <input  placeholder='Search Article No....'/>
+   <input  placeholder={item}/>
     </div>
-    <div className='input-price'>
-        <img src={search} alt="search"  height={21} width={21}/>
-   <input  placeholder='Search Product'/>
-    </div>
-   </div>
+    ))}
+    
+   </div> 
+   
    <div className='price-button-parent'>
-    <div className='price-button'>
-    <button onClick={handleClick}>New Product</button>
-        <img src={add} alt="add"  height={25} width={25}/>
+   {pricePage?.button_main.map((item,index)=>(
+    <div className='price-button' key={index}>
+    <button >{item.name}</button>
+        <img src={item.img} alt="add"  height={25} width={25}/>
     </div>
-    <div className='price-button'>
-    <button>Print List</button>
-        <img src={printer} alt="printer"  height={25} width={25}/>
-    </div>
-    <div className='price-button'>
-    <button>Advanced mode</button>
-        <img src={mode} alt="advanced_mode"  height={25} width={25}/>
-    </div>
+    ))}
    </div>
    </div>
    </>
